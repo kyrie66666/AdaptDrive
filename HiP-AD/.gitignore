@@ -1,0 +1,16 @@
+*.pyc
+*.pth
+*.whl
+*.swp
+*.idea
+*.egg-info
+*.so
+build/
+__pycache__/
+.idea/
+# Keep repository-owned anchors, routes, and ScenarioRunner fixtures.
+# Large datasets and generated indexes remain external.
+/data/infos/
+/data/bench2drive/
+ckpts
+work_dirs

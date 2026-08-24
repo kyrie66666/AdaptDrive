@@ -1,0 +1,92 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Build products
+build/
+dist/
+*.egg-info/
+*.so
+*.o
+*.a
+*.ninja
+
+# IDE and local agent state
+.idea/
+.vscode/
+.serena/
+.claude/
+.codex/
+# Keep repository-owned skills; ignore only local agent state.
+.agents/*
+!.agents/skills/
+!.agents/skills/**
+.agents/state/
+.agents/cache/
+.agents/work/
+
+# Local environment and secrets
+.env
+.env.*
+!env.example
+*.local
+*.secret
+
+# Model and dataset assets
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.engine
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+
+# Replay and generated arrays
+*.dat
+*.mmap
+buffer_state.npy
+replay/
+replay_mmap/
+
+# Runtime and experiment outputs
+runs/
+run/
+outputs/
+output/
+logs/
+runtime/
+/evaluation/
+/evaluations/
+work_dirs/
+checkpoints/
+debug_vis/
+videos/
+wandb/
+mlruns/
+tensorboard/
+
+# CARLA and simulator artifacts
+CarlaUE4/Saved/
+*.log
+/core
+/core.*
+# Historical upstream dataset link; never publish the former server path.
+third_party/DCNv4/classification/meta_data/meta
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
